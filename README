@@ -1,19 +1,19 @@
 
-�e��
-	�b Windows ���Ҥ��ϥ� cygwin �� tcsh / perl �H�Τ@�ǻ��U�u��{��
-	(���ӥi�H�ܮe���a�令�b Linux ���Ҥ��ϥ�)
+前提
+	在 Windows 環境中使用 cygwin 的 tcsh / perl 以及一些輔助工具程式
+	(應該可以很容易地改成在 Linux 環境中使用)
 
-�\��
+功能
 	Automatically download all the points of interest provided on http://www.tomtomusers.com/dis/forum.php
-	�۰ʥ� TomTom ���a���U���b�N����z�� po �夤���Ҧ����I
+	自動由 TomTom 玩家網下載在杰哥整理的 po 文中的所有景點
 
-�ϥΤ覡
-	1. �s�W�@�ӥs�� "yourUserPass.csh" (�Y�Q�ϥΤ��P�ɦW�A�i�b getPOIttu.csh ���]�w)�A�ɮפ��e���H�U�T��:
+使用方式
+	1. 新增一個叫做 "yourUserPass.csh" (若想使用不同檔名，可在 getPOIttu.csh 中設定)，檔案內容為以下三行:
 
 		#!/usr/bin/tcsh -f
 		set username=YOUR_USERNAME
 		set password=YOUR_PASSWORD
 
-	�䤤 YOUR_USERNAME �M YOUR_PASSWORD �O�A�ۤv�b TomTom ���a���W���b���αK�X
-	2. ���� ./getPOIttu.csh �Y�i
-	3. �U���^�Ӫ����I�|��m�b POI �o�ӷs�W�ؿ���
+	其中 YOUR_USERNAME 和 YOUR_PASSWORD 是你自己在 TomTom 玩家網上的帳號及密碼
+	2. 執行 ./getPOIttu.csh 即可
+	3. 下載回來的景點會放置在 POI 這個新增目錄中
